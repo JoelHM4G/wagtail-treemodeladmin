@@ -40,7 +40,7 @@ class TreeAdminURLHelper(AdminURLHelper):
 class TreeButtonHelper(ButtonHelper):
     def add_button(self, classnames_add=None, classnames_exclude=None):
         return super(TreeButtonHelper, self).add_button(
-            classnames_add=["button-small"]
+            classnames_add=[""]
         )
 
     def get_add_button_with_parent(
