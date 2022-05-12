@@ -22,7 +22,9 @@
   <div class="right header-right">
     {% if user_can_create %}
         <div class="actionbutton">
-            {% include 'modeladmin/includes/button.html' with button=view.button_helper.add_button %}
+              {% include 'modeladmin/includes/button.html' with button=view.get_parent_edit_button %}
+
+        {% include 'modeladmin/includes/button.html' with button=view.get_add_button_with_parent %}
         </div>
     {% endif %}
 
